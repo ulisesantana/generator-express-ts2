@@ -1,7 +1,7 @@
 {
   "name": "generator-express-ts2",
   "version": "0.1.0",
-  "description": "A generator for node apps with Typescript",
+  "description": "A generator for node apps with Typescript 2",
   "homepage": "",
   "author": {
     "name": "Ulises Santana",
@@ -13,11 +13,8 @@
   ],
   "main": "generators/app/index.js",
   "keywords": [
-    "crud",
-    "mongo",
-    "mongoose",
-    "express",
     "typescript",
+    "node",
     "yeoman-generator"
   ],
   "devDependencies": {
@@ -83,7 +80,7 @@
   },
   "repository": {
     "type" : "git",
-    "url" : "https://github.com/ulisesantana/generator-express-ts2"
+    "url" : "https://github.com/ulisesantana/generator-ts2"
   },
   "license": "MIT"
 }
