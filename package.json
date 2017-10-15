@@ -1,7 +1,7 @@
 {
-  "name": "generator-express-ts-crud",
+  "name": "generator-express-ts2",
   "version": "0.1.0",
-  "description": "A generator for an API REST with CRUD operations on a MongoDB with TypeScript & Express",
+  "description": "A generator for node apps with Typescript",
   "homepage": "",
   "author": {
     "name": "Ulises Santana",
@@ -83,7 +83,7 @@
   },
   "repository": {
     "type" : "git",
-    "url" : "https://github.com/ulisesantana/generator-express-ts-crud"
+    "url" : "https://github.com/ulisesantana/generator-express-ts2"
   },
   "license": "MIT"
 }
