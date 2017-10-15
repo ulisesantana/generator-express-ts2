@@ -43,7 +43,6 @@ module.exports = class extends Generator {
   }
 
   install() {
-    console.log(git.user);
     this.installDependencies({
       npm: true,
       bower: false,
