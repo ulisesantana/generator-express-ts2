@@ -1,5 +1,5 @@
 # generator-express-ts-crud [![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Dependency Status][daviddm-image]][daviddm-url] [![Coverage percentage][coveralls-image]][coveralls-url]
-> A generator for an API REST with CRUD operations on a MongoDB with TypeScript &amp; Express
+> A generator for Node with Typescript 2
 
 ## Installation
 
@@ -7,13 +7,13 @@ First, install [Yeoman](http://yeoman.io) and generator-express-ts-crud using [n
 
 ```bash
 npm install -g yo
-npm install -g generator-express-ts2
+npm install -g generator-ts2
 ```
 
 Then generate your new project:
 
 ```bash
-yo express-ts2
+yo ts2
 ```
 
 ## Getting To Know Yeoman
