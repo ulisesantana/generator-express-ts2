@@ -1,7 +1,7 @@
 {
   "name": "generator-ts2",
-  "version": "0.1.3",
-  "description": "A generator for node apps with Typescript 2",
+  "version": "0.1.4",
+  "description": "A generator for Node with Typescript 2",
   "homepage": "",
   "author": {
     "name": "Ulises Santana",
