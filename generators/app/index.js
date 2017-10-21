@@ -7,7 +7,7 @@ module.exports = class extends Generator {
   prompting() {
     // Have Yeoman greet the user.
     this.log(yosay(
-      'Welcome to the sublime ' + chalk.red('generator-express-ts2') + ' generator!'
+      'Welcome to the sublime ' + chalk.red('generator-ts2') + ' generator!'
     ));
 
     // const prompts = [{
@@ -39,6 +39,14 @@ module.exports = class extends Generator {
     this.fs.copy(
       this.templatePath('src/index.ts'),
       this.destinationPath('src/index.ts')
+    );
+    this.fs.copy(
+      this.templatePath('src/FizzBuzz/FizzBuzz.ts'),
+      this.destinationPath('src/FizzBuzz/FizzBuzz.ts')
+    );
+    this.fs.copy(
+      this.templatePath('src/FizzBuzz/FizzBuzz.test.ts'),
+      this.destinationPath('src/FizzBuzz/FizzBuzz.test.ts')
     );
   }
 

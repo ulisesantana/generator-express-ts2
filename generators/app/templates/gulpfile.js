@@ -1,5 +1,7 @@
 const gulp = require('gulp');
 const ts = require('gulp-typescript');
+const mocha = require('gulp-mocha');
+const gutil = require('gulp-util');
 const JSON_FILES = ['src/*.json', 'src/**/*.json'];
 
 // pull in the project TypeScript config
@@ -12,7 +14,7 @@ gulp.task('scripts', () => {
 });
 
 gulp.task('watch', ['scripts'], () => {
-  gulp.watch('src/**/*.ts', ['scripts']);
+  gulp.watch('src/**/*.ts', ['mocha']);
 });
 
 gulp.task('assets', function() {
@@ -20,4 +22,11 @@ gulp.task('assets', function() {
   .pipe(gulp.dest('dist'));
 });
 
+gulp.task('mocha', ['scripts'], function() {
+  return gulp.src(['dist/**/*.test.js'], { read: false })
+      .pipe(mocha({ reporter: 'list' }))
+      .on('error', gutil.log);
+});
+
 gulp.task('default', ['watch', 'assets']);
+

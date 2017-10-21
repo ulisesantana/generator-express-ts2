@@ -4,11 +4,11 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node dist/index.js",
+    "start": "npm run build && node dist/index.js",
     "build": "tsc",
     "dev": "nodemon dist/index.js",
     "tasks": "gulp",
-    "test": "mocha --compilers ts:ts-node/register 'src/**/*.test.ts'"
+    "test": "mocha --require ts-node/register 'src/**/*.test.ts'"
   },
   "author": "",
   "license": "MIT",
@@ -26,6 +26,8 @@
     "chai": "^4.1.2",
     "gulp": "^3.9.1",
     "gulp-typescript": "^3.1.1",
+    "gulp-mocha": "^3.0.1",
+    "gulp-util": "^3.0.8",
     "mocha": "^4.0.1",
     "nodemon": "^1.12.1",
     "ts-node": "^3.3.0"
