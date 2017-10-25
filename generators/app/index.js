@@ -25,6 +25,14 @@ module.exports = class extends Generator {
 
   writing() {
     this.fs.copy(
+      this.templatePath('.gitignore'),
+      this.destinationPath('.gitignore')
+    );
+    this.fs.copy(
+      this.templatePath('Dockerfile'),
+      this.destinationPath('Dockerfile')
+    );
+    this.fs.copy(
       this.templatePath('gulpfile.js'),
       this.destinationPath('gulpfile.js')
     );
