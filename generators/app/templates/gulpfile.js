@@ -14,18 +14,12 @@ gulp.task('scripts', () => {
 });
 
 gulp.task('watch', ['scripts'], () => {
-  gulp.watch('src/**/*.ts', ['mocha']);
+  gulp.watch('src/**/*.ts', ['scripts']);
 });
 
 gulp.task('assets', function() {
   return gulp.src(JSON_FILES)
   .pipe(gulp.dest('dist'));
-});
-
-gulp.task('mocha', ['scripts'], function() {
-  return gulp.src(['dist/**/*.test.js'], { read: false })
-      .pipe(mocha({ reporter: 'list' }))
-      .on('error', gutil.log);
 });
 
 gulp.task('default', ['watch', 'assets']);
