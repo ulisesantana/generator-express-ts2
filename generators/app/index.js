@@ -49,12 +49,8 @@ module.exports = class extends Generator {
       this.destinationPath('src/index.ts')
     );
     this.fs.copy(
-      this.templatePath('src/FizzBuzz/FizzBuzz.ts'),
-      this.destinationPath('src/FizzBuzz/FizzBuzz.ts')
-    );
-    this.fs.copy(
-      this.templatePath('src/FizzBuzz/FizzBuzz.test.ts'),
-      this.destinationPath('src/FizzBuzz/FizzBuzz.test.ts')
+      this.templatePath('test/basic.test.ts'),
+      this.destinationPath('test/basic.test.ts')
     );
   }
 
